@@ -1,0 +1,14 @@
+PROCEDURE Insertion-Sort(int:array)
+VAR
+i:INTEGER;
+key:FLOAT;
+BEGIN
+FOR i FROM 1 TO int.length STEP 1  DO
+key:=int[i];
+int[i]:=int[i-1];
+IF (int[i-1]>key) 
+THEN
+int[i-1]=key;
+END_IF
+END_FOR
+END
